@@ -10,7 +10,25 @@
     <!-- header started -->
     <header>
         <nav>
-            <div class="fixed top-0 left-0 bg-[#ffffff] w-full flex justify-center gap-93 items-center py-3 border-b border-[#b4b4b48c]">
+            <!-- Mobile Screen -->
+            <div class="lg:hidden">
+                <div class="flex justify-between items-center py-3 px-4">
+                    <div class="flex text-[#502314] cursor-pointer items-center gap-3">
+                        <img class="text-[#502314] w-6 h-6 cursor-pointer" src="./src/assets/icons/menu-bar.png" alt="Menu-bar Image">
+                        <h1 class="text-[#502314] font-flame-bold uppercase tracking-wide text-[28px] cursor-pointer">Burger King</h1>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <img class="text-[#502314] w-5.5 h-5.5 cursor-pointer" src="./src/assets/icons/user.png"></img>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Screen -->
+
+            <hr class="text-gray-300">
+
+            <!-- Desktop Screen -->
+            <div class="hidden lg:block">
+                <div class="fixed top-0 left-0 bg-[#ffffff] w-full flex justify-between px-15 items-center py-3 border-b border-[#b4b4b48c]">
                 <div class="text-[20px] text-[#502314] font-flame-regular cursor-pointer">
                 <img src="./src/assets/icons/menu-bar.png" alt="Menu-bar Image">
                 </div>
@@ -18,35 +36,65 @@
                     Burger King
                 </div>
                 <div class="flex items-center gap-5">
-                    <img src="./src/assets/icons/user.png" class="text-[#502314] cursor-pointer"></img>
+                    <img class="w-6 h-6 cursor-pointer" src="./src/assets/icons/user.png" class="text-[#502314] cursor-pointer"></img>
                     <button class="flex items-center justify-center gap-3 border border-[#9999998c] rounded-3xl py-2 px-4 text-[13px] font-bold text-[#0000008c]">
                     <img src="./src/assets/icons/shopping-cart.png" class="text-[#000000b3]"></img> View Cart</button>
                 </div>
             </div>
+            </div>
+            <!-- Desktop Screen -->
+            
         </nav>
     </header>
     <!-- header ended -->
 
     <!-- main started -->
     <main>
+
         <!-- section-1 started -->
-        <!-- <section>
-            <div class="flex justify-center my-10 pt-16">
-                <div class="w-100">
-                    <h1 class="font-flame-bold text-6xl text-[#502314] pb-5">The Ultimate Steakhouse Whopper®</h1>
-                    <button class="bg-[#d62300] text-[#ffffff] flex justify-center items-center rounded-4xl font-bold py-3 px-22 gap-3 cursor-pointer">
+
+        <!-- Mobile Screen -->
+        <section>
+            <div class="lg:hidden flex justify-center">
+                <div class="pt-4">
+                <div>
+                    <img class="w-90" src="./src/assets/images/main-image1.avif" alt="Main Image">
+                </div>
+                <div class="w-90 pt-6">
+                    <button class="bg-[#d62300] text-[#ffffff] flex justify-center items-center rounded-4xl font-bold py-3 px-28 gap-3 cursor-pointer">
                     <img src="./src/assets/icons/shopping-cart-2.png" class="text-[#ffffff]"></img> Order Pickup</button>
 
-                    <button class="text-[#502314] flex justify-center items-center border border-[#502314] rounded-4xl font-bold mt-2 py-3 px-20 gap-3 cursor-pointer">
+                    <button class="text-[#502314] flex justify-center items-center border border-[#502314] rounded-4xl font-bold mt-2 py-2.5 px-26 gap-3 cursor-pointer">
                     <img src="./src/assets/icons/delivery.png"></img> Order Delivery</button>
                 </div>
-                <div class="w-190">
-                    <img src="./src/assets/images/main-image1.avif" alt="Main Image">
+            </div>
+            </div>
+        </section>
+        <!-- Mobile Screen -->
+
+        <!-- Desktop Screen -->
+        <section>
+            <div class="hidden lg:block">
+                <div class="flex justify-center items-center my-10 pt-16">
+                    <div class="w-100">
+                        <h1 class="font-flame-bold text-6xl text-[#502314] pb-5">Start your BK® order.</h1>
+                        <button class="bg-[#d62300] text-[#ffffff] flex justify-center items-center rounded-4xl font-bold py-3 px-22 gap-3 cursor-pointer">
+                        <img src="./src/assets/icons/shopping-cart-2.png" class="text-[#ffffff]"></img> Order Pickup</button>
+                        <button class="text-[#502314] flex justify-center items-center border border-[#502314] rounded-4xl font-bold mt-2 py-3 px-20 gap-3 cursor-pointer">
+                        <img src="./src/assets/icons/delivery.png"></img> Order Delivery</button>
+                    </div>
+                    <div class="w-190">
+                        <img src="./src/assets/images/main-image1.avif" alt="Main Image">
+                    </div>
                 </div>
             </div>
-        </section> -->
-        <!-- section-1 started -->
+        </section>
+        <!-- Desktop Screen -->
+        
+        <!-- section-1 ended -->
 
+
+        
         <!-- section-2 started -->
         <!-- <section>
             <div class="flex flex-col items-center pr-130 mb-44 ">
@@ -91,10 +139,10 @@
 
     <!-- footer started -->
     <footer>
-        <div class="bg-[#502314] text-[#ffffff] mb-14">
+        <!-- <div class="bg-[#502314] text-[#ffffff] mb-14">
             <p class="text-center py-4 text-[14px]">TM & Copyright 2026 Obaid Ullah WD. All Rights 
             Reserved.| <span class="border-b cursor-pointer">Do Not Sell Or Share My Personal Information</span></p>
-        </div>
+        </div> -->
     </footer>
     <!-- footer ended -->
 
@@ -123,7 +171,6 @@
 
 
 
-    <script src="https://kit.fontawesome.com/bf9de63499.js" crossorigin="anonymous"></script>
 
     <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 </body>
