@@ -12,7 +12,7 @@
         <nav>
             <!-- Mobile Screen -->
             <div class="lg:hidden">
-                <div class="flex justify-between items-center py-3 px-4">
+                <div class="fixed top-0 left-0 z-50 bg-[#ffffff] w-full flex justify-between items-center py-3 px-4">
                     <div class="flex text-[#502314] cursor-pointer items-center gap-3">
                         <img class="text-[#502314] w-6 h-6 cursor-pointer" src="./src/assets/icons/menu-bar.png" alt="Menu-bar Image">
                         <h1 class="text-[#502314] font-flame-bold uppercase tracking-wide text-[28px] cursor-pointer">Burger King</h1>
@@ -28,7 +28,7 @@
 
             <!-- Desktop Screen -->
             <div class="hidden lg:block">
-                <div class="fixed top-0 left-0 bg-[#ffffff] w-full flex justify-between px-15 items-center py-3 border-b border-[#b4b4b48c]">
+                <div class="fixed top-0 left-0 z-50 bg-[#ffffff] w-full flex justify-between px-15 items-center py-3 border-b border-[#b4b4b48c]">
                 <div class="text-[20px] text-[#502314] font-flame-regular cursor-pointer">
                 <img src="./src/assets/icons/menu-bar.png" alt="Menu-bar Image">
                 </div>
@@ -52,11 +52,11 @@
     <main>
 
         <!-- section-1 started -->
-
-        <!-- Mobile Screen -->
         <section>
+        <!-- Mobile Screen -->
+
             <div class="lg:hidden flex justify-center">
-                <div class="pt-4">
+                <div class="pt-16">
                 <div>
                     <img class="w-90" src="./src/assets/images/main-image1.avif" alt="Main Image">
                 </div>
@@ -69,11 +69,11 @@
                 </div>
             </div>
             </div>
-        </section>
+
         <!-- Mobile Screen -->
 
         <!-- Desktop Screen -->
-        <section>
+
             <div class="hidden lg:block">
                 <div class="flex justify-center items-center my-10 pt-16">
                     <div class="w-100">
@@ -88,9 +88,8 @@
                     </div>
                 </div>
             </div>
-        </section>
         <!-- Desktop Screen -->
-        
+        </section>
         <!-- section-1 ended -->
 
 
@@ -99,7 +98,7 @@
         <section>
             <!-- Mobile Screen -->
             <div class="lg:hidden">
-                <div class="bg-[#eee8de] flex justify-center items-center text-[#502314] mt-70">
+                <div class="bg-[#eee8de] flex justify-center items-center text-[#502314] mt-55">
                     <div class="w-90 relative -top-12 px-4">
                         <img src="./src/assets/images/scanner.avif" alt="Scanner Image">
                     </div>
@@ -116,7 +115,7 @@
                     <p class="px-6 text-center text-[14px] font-semibold">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. 
                     App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms apply.</p>
                 </div>
-                <div class="bg-[#502314] text-[#ffffff] mb-14 px-2">
+                <div class="bg-[#502314] text-[#ffffff] mb-14 mt-6 px-2">
                     <p class="text-center py-4 text-[14px]">TM & Copyright 2026 Obaid Ullah WD. All Rights 
                     Reserved.| <span class="border-b cursor-pointer">Do Not Sell Or Share My Personal Information</span></p>
                 </div>
@@ -124,7 +123,7 @@
             <!-- Mobile Screen -->
 
             <!-- Desktop Screen -->
-            <div>
+            <div class="hidden lg:block">
                 <div class="flex flex-col items-center pr-130 mb-44 ">
                 <div class="w-160 rounded-t-2xl">
                     <img src="./src/assets/images/advertise.webp" class="cursor-pointer" alt="Advertise">
@@ -168,20 +167,19 @@
 
     <!-- footer started -->
     <footer>
-        
-    </footer>
-    <!-- footer ended -->
-
-    <!-- footer-nav started -->
-    <!-- <section>
-        <div class="fixed bottom-0 left-0 bg-[#ffffff] w-full flex justify-center gap-65 pt-2 font-flame-regular">
-            <div class="text-gray-500 flex flex-col items-center cursor-pointer">
-                <img class="w-5" src="./src/assets/icons/user2.png" alt="user">
+        <section>
+        <div class="fixed bottom-0 left-0 bg-[#ffffff] w-full flex justify-between px-6 lg:px-36 lg:gap-65 py-2 font-flame-regular">
+            <div class="text-[#502314] flex flex-col items-center cursor-pointer">
+                <img class="w-5" src="./src/assets/images/burger-king-logo.png" alt="footer-logo">
                 <p class="text-[12px]">Home</p>
             </div>
             <div class="text-gray-500 flex flex-col items-center cursor-pointer">
                 <img class="w-5" src="./src/assets/icons/footer-menu.png" alt="footer-menu">
                 <p class="text-[12px]">Menu</p>
+            </div>
+            <div class="lg:hidden text-gray-500 flex flex-col items-center cursor-pointer">
+                <img class="w-5" src="./src/assets/icons/qr-code.png" alt="footer-code">
+                <p class="text-[12px]">My Code</p>
             </div>
             <div class="text-gray-500 flex flex-col items-center cursor-pointer">
                 <img class="w-5" src="./src/assets/icons/footer-offers.png" alt="footer-offers">
@@ -192,12 +190,11 @@
                 <p class="text-[12px]">Rewards</p>
             </div>
         </div>
-    </section> -->
-    <!-- footer-nav ended -->
+        </section>
+    </footer>
+    <!-- footer ended -->
 
-
-
-
+    
     <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 </body>
 </html>
