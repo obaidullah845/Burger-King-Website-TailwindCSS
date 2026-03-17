@@ -279,8 +279,14 @@
   .w-50 {
     width: calc(var(--spacing) * 50);
   }
+  .w-85 {
+    width: calc(var(--spacing) * 85);
+  }
   .w-90 {
     width: calc(var(--spacing) * 90);
+  }
+  .w-95 {
+    width: calc(var(--spacing) * 95);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
@@ -361,6 +367,9 @@
   .border-\[\#b4b4b48c\] {
     border-color: #b4b4b48c;
   }
+  .border-\[\#d62300\] {
+    border-color: #d62300;
+  }
   .bg-\[\#502314\] {
     background-color: #502314;
   }
@@ -402,6 +411,12 @@
   }
   .px-26 {
     padding-inline: calc(var(--spacing) * 26);
+  }
+  .px-27 {
+    padding-inline: calc(var(--spacing) * 27);
+  }
+  .px-27\.5 {
+    padding-inline: calc(var(--spacing) * 27.5);
   }
   .px-28 {
     padding-inline: calc(var(--spacing) * 28);
